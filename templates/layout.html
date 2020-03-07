@@ -1,10 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Samuel Stuver Personal Website">
+    <meta name="author" content="Samuel Stuver">
+
+    {% if title %}
+        <title>Sam Stuver - {{ title }}</title>
+    {% else %}
+        <title>Sam Stuver</title>
+    {% endif %}
 </head>
 <body>
 
 </body>
+
 </html>
