@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Samuel Stuver Personal Website">
+    <meta name="author" content="Samuel Stuver">
+
+    {% if title %}
+        <title>Samuel Stuver - {{ title }}</title>
+    {% else %}
+        <title>Samuel Stuver</title>
+    {% endif %}
+</head>
+<body>
+    {% for post in posts %}
+        <h1>{{ post.title }}</h1>
+        <p>By {{ post.author }} on {{ post.date_posted }}</p>
+        <p>{{ post.content }}</p>
+    {% endfor %}
+</body>
+
+</html>
