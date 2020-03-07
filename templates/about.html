@@ -1,18 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="Samuel Stuver Personal Website">
-    <meta name="author" content="Samuel Stuver">
-
-    {% if title %}
-        <title>Samuel Stuver - {{ title }}</title>
-    {% else %}
-        <title>Samuel Stuver</title>
-    {% endif %}
-</head>
-<body>
+{% extends "layout.html" %}
+{% block content %}
     <h1>About Sam</h1>
-</body>
-
-</html>
+{% endblock content%}
